@@ -117,3 +117,4 @@ target_wrapper.*
 CMakeLists.txt.user*
 
 .idea
+mavlink/include

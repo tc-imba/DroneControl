@@ -5,7 +5,6 @@ project(DroneControl)
 set(CMAKE_CXX_STANDARD 14)
 
 set(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} $ENV{QT5_DIR})
-#set(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} /opt/qt/5.12.3/gcc_64/)
 
 # Find includes in corresponding build directories
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
@@ -16,6 +15,8 @@ set(CMAKE_AUTOUIC ON)
 
 # Find the QtWidgets library
 find_package(Qt5Widgets CONFIG REQUIRED)
+
+include_directories(mavlink/include)
 
 set(SOURCE_FILES
         mainwindow.ui
